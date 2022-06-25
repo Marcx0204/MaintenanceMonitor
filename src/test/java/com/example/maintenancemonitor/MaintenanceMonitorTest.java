@@ -18,4 +18,12 @@ public class MaintenanceMonitorTest {
         String result = mm.getMessage();
         Assertions.assertEquals(expected,result);
     }
+    @Test
+    void resetMessageTest(){
+        String expected = "no message set";
+        mm.setMessage("success1");
+        mm.resetMessage();
+        String result = mm.getMessage();
+        Assertions.assertEquals(expected,result);
+    }
 }

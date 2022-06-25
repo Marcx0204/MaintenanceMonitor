@@ -13,4 +13,7 @@ public class MaintenanceMonitor {
         }
         return message;
     }
+    public void resetMessage(){
+       this.message = "";
+    }
 }
