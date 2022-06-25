@@ -19,4 +19,9 @@ public class MaintenanceMonitorController {
     public String getMessage(){
         return mm.getMessage();
     }
+    @RequestMapping("/resetMessage")
+    public String resetMessage(){
+         mm.resetMessage();
+         return "Message has been reset";
+    }
 }
