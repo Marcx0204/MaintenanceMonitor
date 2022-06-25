@@ -13,8 +13,8 @@ public class MaintenanceMonitorTest {
     }
     @Test
     void getMessageTest(){
-        String expected = "success";
-        mm.setMessage("success");
+        String expected = "success1";
+        mm.setMessage("success1");
         String result = mm.getMessage();
         Assertions.assertEquals(expected,result);
     }
