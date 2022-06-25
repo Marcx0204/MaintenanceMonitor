@@ -12,7 +12,11 @@ public class MaintenanceMonitorController {
 
     @RequestMapping("/setMessage")
     public String setMessage(@RequestParam String m){
-        //return mm.setMessage(m);
+          mm.setMessage(m);
         return "Your Message is set!";
+    }
+    @RequestMapping("/getMessage")
+    public String getMessage(){
+        return mm.getMessage();
     }
 }
